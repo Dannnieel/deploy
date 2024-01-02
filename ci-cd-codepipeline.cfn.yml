@@ -33,10 +33,10 @@ Parameters:
   GitHubToken:
     Type: String
     NoEcho: true
-    Description: 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
+    Description: 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
     MinLength: 3
     MaxLength: 100
-    ConstraintDescription: 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
+    ConstraintDescription: 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
 
   GitHubUser:
     Type: String
