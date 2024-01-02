@@ -17,10 +17,10 @@ Parameters:
   GitSourceRepo:
     Type: String
     Description: GitHub source repository - must contain a Dockerfile and buildspec.yml in the base
-    Default: cd0157-Server-Deployment-and-Containerization
+    Default: deploy
     MinLength: 1
     MaxLength: 100
-    ConstraintDescription: You must enter a GitHub repository name
+    ConstraintDescription: deploy
 
   GitBranch:
     Type: String
@@ -28,23 +28,23 @@ Parameters:
     Description: GitHub git repository branch - change triggers a new build
     MinLength: 1
     MaxLength: 100
-    ConstraintDescription: You must enter a GitHub repository branch name
+    ConstraintDescription: deploy
 
   GitHubToken:
     Type: String
     NoEcho: true
-    Description: GitHub API token - see https://github.com/blog/1509-personal-api-tokens
+    Description: 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
     MinLength: 3
     MaxLength: 100
-    ConstraintDescription: You must enter a GitHub personal access token
+    ConstraintDescription: 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
 
   GitHubUser:
     Type: String
-    Default: dannnieel
-    Description: GitHub username or organization
+    Default: Dannnieel
+    Description: Dannnieel
     MinLength: 3
     MaxLength: 100
-    ConstraintDescription: You must enter a GitHub username or organization
+    ConstraintDescription: Dannnieel
 
   CodeBuildDockerImage:
     Type: String
